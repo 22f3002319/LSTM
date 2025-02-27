@@ -34,7 +34,8 @@ def prepare_data(df):
 
 def build_lstm_model():
     model = Sequential([
-        LSTM(50, return_sequences=True, input_shape=(60, 1)),
+        Input(shape=(60,1)),
+        LSTM(50, return_sequences=True,
         LSTM(50, return_sequences=False),
         Dense(25),
         Dense(1)
