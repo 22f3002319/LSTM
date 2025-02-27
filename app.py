@@ -5,7 +5,7 @@ import yfinance as yf
 import matplotlib.pyplot as plt
 import io, base64
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense
+from tensorflow.keras.layers import LSTM, Dense ,Input
 from sklearn.preprocessing import MinMaxScaler
 
 def fetch_stock_data(ticker):
